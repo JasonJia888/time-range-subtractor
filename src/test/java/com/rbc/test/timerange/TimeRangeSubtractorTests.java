@@ -20,10 +20,6 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(9, 30), result[0].getStart());
 		assertEquals(LocalTime.of(10, 0), result[0].getEnd());
 		
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -36,10 +32,6 @@ public class TimeRangeSubtractorTests {
 		};
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertTrue(result.length == 0);
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -60,7 +52,6 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(10, 15), result[1].getStart());
 		assertEquals(LocalTime.of(10, 30), result[1].getEnd());
 
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -79,10 +70,6 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(10, 0), result[0].getEnd());
 		assertEquals(LocalTime.of(10, 15), result[1].getStart());
 		assertEquals(LocalTime.of(11, 0), result[1].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -96,10 +83,6 @@ public class TimeRangeSubtractorTests {
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertEquals(LocalTime.of(9, 0), result[0].getStart());
 		assertEquals(LocalTime.of(9, 30), result[0].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -122,10 +105,6 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(10, 0), result[0].getEnd());
 		assertEquals(LocalTime.of(10, 15), result[1].getStart());
 		assertEquals(LocalTime.of(11, 0), result[1].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -152,10 +131,6 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(12, 30), result[2].getEnd());
 		assertEquals(LocalTime.of(16, 0), result[3].getStart());
 		assertEquals(LocalTime.MAX, result[3].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -170,10 +145,6 @@ public class TimeRangeSubtractorTests {
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertEquals(LocalTime.of(9, 0), result[0].getStart());
 		assertEquals(LocalTime.of(9, 30), result[0].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -182,10 +153,6 @@ public class TimeRangeSubtractorTests {
 		TimeRange[] timeRanges2 = { };
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertTrue(result.length == 0);
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -194,10 +161,6 @@ public class TimeRangeSubtractorTests {
 		TimeRange[] timeRanges2 = null;;
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertTrue(result.length == 0);
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -212,10 +175,6 @@ public class TimeRangeSubtractorTests {
 		TimeRange[] result = TimeRangeSubtractor.subtractTimeRanges(timeRanges1, timeRanges2);
 		assertEquals(LocalTime.of(9, 0), result[0].getStart());
 		assertEquals(LocalTime.of(9, 30), result[0].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 	
 	@Test
@@ -233,9 +192,5 @@ public class TimeRangeSubtractorTests {
 		assertEquals(LocalTime.of(9, 15), result[0].getEnd());
 		assertEquals(LocalTime.of(9, 29), result[1].getStart());
 		assertEquals(LocalTime.of(9, 30), result[1].getEnd());
-		for(TimeRange tr : result) {
-			System.out.println(tr.getStart().toString() + ","+tr.getEnd().toString());
-		}
-		System.out.println("--------------------------------");
 	}
 }

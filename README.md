@@ -5,9 +5,9 @@
 
 1. TimeRange - represent a time section with begin and end time.
 
-2. TimeRangeSubtractor - class that holds the main loggic, it has 2 method:
-cleanupTimeRanges - merge overlapping time sections and sort them in asc order.
-subtractTimeRanges - do the subtract logic on the sorted time range.
+2. TimeRangeSubtractor - class that holds the main loggic, it has 2 method:   
+cleanupTimeRanges - merge overlapping time sections and sort them in asc order.   
+subtractTimeRanges - do the subtract logic on the sorted time range.   
 3. AppRun - process user input and print out the result.
 
 ### How to run.

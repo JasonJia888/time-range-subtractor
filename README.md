@@ -17,7 +17,7 @@ subtractTimeRanges - do the subtract logic on the sorted time range.
 2. $ docker container run -it kepingjia/time-range-subtractor   
 
 - An example run:
-keping@keping-Studio-1737:~/Documents$ docker container run -it time-range-subtractor   
+keping@keping-Studio-1737:~/Documents$ docker container run -it kepingjia/time-range-subtractor   
 An example of time range set "9:30 - 10:00, 11:00 - 12:00"   
 Please enter the first time range set:   
 9:30 - 10:00, 9:00 - 9:20   
